@@ -1,0 +1,49 @@
+
+h1,h2{
+    color:white
+} 
+.second-word{
+    color: red;
+}
+body {
+    background-color: black;
+}
+a {
+   color: dodgerblue;
+    text-decoration: none;
+}
+.container{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: gray;
+    padding: 20px;  
+    border-radius: 15px;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    
+}
+img {
+    border-radius: 50%;
+}
+.nav-area {
+    list-style: none;
+}
+
+.nav-area li {
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav-area li a {
+    transition: .3s;
+    color: white;
+    font-size: 17px;
+}
+.logo{
+    cursor:pointer;
+    
+}
