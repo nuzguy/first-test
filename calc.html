@@ -1,0 +1,74 @@
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>
+        first site
+    </title>
+</head>
+<header>
+    <h1>elo world</h1>
+    <nav>
+        <ul class="nav-area top-nav">
+            <li>
+                <a href="/first-test/index.html">home</a>
+            </li>
+            <li>
+                <a href="/first-test/page-nice.html">casa bella</a>
+            </li>
+            <li>
+                <a href="/first-test/calc.html">CALCULATRTICE</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="container"> 
+
+        <h1>
+            calcolator
+        </h1>
+        <h1 class="second-word">explosive</h1>
+        <h2>
+            this is a site made by an <a href="https://github.com/Vincenzo160">idiot</a>
+        </h2>
+       <a href="https://www.youtube.com/watch?v=4YojEDlXNbo"><img src="/first-test/assets/gorzog.jpg"></a> 
+       <h1 id="cx"></h1>
+       <input type="number" id="inp1"> 
+        <select id="ape">
+            <option value="sum">+</option> 
+            <option value="min">-</option>  
+            <option value="xin">*</option> 
+            <option value="dov">/</option> 
+        </select>
+        <input type="number" id="inp2"> 
+        <button onclick="calco()">=</button>
+    </div>
+</body>
+<script>
+function calco() {
+    var som = null
+    var zer = 0
+    let num1 = document.getElementById('inp1').value; 
+    let num2 = document.getElementById('inp2').value;
+    let ddmeniu = document.getElementById('ape').value;
+    console.log(num1);
+    console.log(num2);
+    console.log(ddmeniu);
+    if(ddmeniu === 'sum') {
+        som = +num1 + +num2
+    }  if(ddmeniu === 'min') {
+        som = +num1 - +num2; 
+    }  if(ddmeniu === 'xin') {
+        som = +num1 * +num2;
+    } if(ddmeniu === 'dov') {
+        som = +num1 / +num2
+        if(+num2 === +zer) {
+            console.log("ciao")
+            location.href='https://youtu.be/YeAp15OmW2s?t=78'
+
+        }
+    } 
+    
+    console.log(som)
+    document.getElementById('cx').innerHTML = som
+}
+</script>
